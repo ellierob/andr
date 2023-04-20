@@ -7,15 +7,15 @@ import andr3.utilities.StringUtils
 
 import org.apache.commons.text.WordUtils
 
-// fun main() {
-//     val tokens = StringUtils.split(MessageUtils.getMessage())
-//     val result = StringUtils.join(tokens)
-//     println(WordUtils.capitalize(result))
-// }
+fun main() {
+    val tokens = StringUtils.split(MessageUtils.getMessage())
+    val result = StringUtils.join(tokens)
+    println(WordUtils.capitalize(result))
+}
 
 
 // Hello World Program
 
-fun main(args : Array<String>) {
-        println("Hello, World!")
-}
+// fun main(args : Array<String>) {
+//         println("Hello, World!")
+// }
