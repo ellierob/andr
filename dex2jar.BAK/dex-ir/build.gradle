@@ -1,6 +1,0 @@
-description = 'Dex Translator'
-
-dependencies {
-  implementation project(':dex-reader-api')
-}
-

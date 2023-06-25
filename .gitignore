@@ -1,12 +1,7 @@
-# Ignore Gradle project-specific cache directory
+.java
+.javacache
+.gradlecache
 .gradle
+.gradlefiles
 
-# Ignore Gradle build output directory
-build
-
-dex2jar2/.git
-# dex2jar2/.github
-dex2jar.BAK1/.git
-# dex2jar.BAK1/.github
-
-apk
+gradl.old
