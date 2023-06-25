@@ -1,7 +1,7 @@
 .java
 .javacache
 .gradlecache
-.gradle
+.gradlehome
 .gradlefiles
 
 gradl.old
