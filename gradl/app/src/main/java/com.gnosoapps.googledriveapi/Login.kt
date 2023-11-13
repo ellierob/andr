@@ -1,5 +1,12 @@
 // from https://www.codingkaro.in/2021/12/how-to-add-sign-in-through-google-in.html
 
+/*
+Step 1: Connect your Android Studio with the FireBase.
+Step 2:   Write the Given Code.
+Step 3:   Add the Internet Permission.
+Step 4:   Add the SHA 1 Key.
+*/
+
 // modifications 
 
 package com.gnosoapps.googledriveapi
