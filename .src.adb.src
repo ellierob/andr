@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [ ! -f .env.BAK.env ]; then
+    echo ".env.BAK.env doesn't exists"
+    mv .env .env.BAK.env
+    
+    nohup /mnt/d/Android/android-sdk/platform-tools/adb.exe -a -P 5037 nodaemon server >/dev/null 2>&1 &
+
+    # Check if any devices are connected
+    DEVICE_COUNT=$(adb devices | sed -n '2,$p' | grep -v '^$' | wc -l)
+
+
+    if [ "$DEVICE_COUNT" -eq 0 ]; then
+        echo "No ADB devices found. Launching BlueStacks..."
+
+        # Launch BlueStacks (detached)
+        nohup "/mnt/d/Program Files/BlueStacks_nxt/HD-Player.exe" --instance Pie64 >/dev/null 2>&1 &
+        
+        # Optional: Wait for device to appear
+        echo "Waiting for device to connect via ADB..."
+        until adb get-state 2>/dev/null | grep -q "device"; do
+            sleep 1
+        done
+        echo "ADB device connected."
+    else
+        echo "ADB device(s) already connected."
+    fi
+
+    if powershell.exe -Command "Get-Process HD-Player -ErrorAction SilentlyContinue" > /dev/null; then
+        echo "Bluestack"
+        mv .env.adb.bs.env .env
+    else
+        echo "not Bluestack"
+        mv .env.adb.and.env .env
+    fi
+else
+    echo ".env.BAK.env already exists"
+fi

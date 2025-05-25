@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -f .env.BAK.env ]; then
+    if [ -f .env.adb.and.env ]; then
+        # echo "File exists: .env.adb.and.env"
+        mv .env .env.adb.bs.env
+    else
+        # echo "File not found: .env.adb.and.env"
+        mv .env .env.adb.and.env
+    fi
+
+    /mnt/d/Android/android-sdk/platform-tools/adb.exe kill-server
+
+    mv .env.BAK.env .env
+else
+fi
