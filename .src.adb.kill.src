@@ -14,6 +14,8 @@ if [ -f .env.BAK.env ]; then
 
     /mnt/d/Android/android-sdk/platform-tools/adb.exe kill-server
 
+    pkill -9 socat
+
     mv .env.BAK.env .env
 else
 fi

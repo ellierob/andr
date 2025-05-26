@@ -6,6 +6,8 @@ if [ ! -f .env.BAK.env ]; then
     
     nohup /mnt/d/Android/android-sdk/platform-tools/adb.exe -a -P 5037 nodaemon server >/dev/null 2>&1 &
 
+    nohup socat -d -d TCP-LISTEN:5037,reuseaddr,fork TCP:$HOSTIP:5037 >/dev/null 2>&1 &
+
     # Check if any devices are connected
     DEVICE_COUNT=$(adb devices | sed -n '2,$p' | grep -v '^$' | wc -l)
 
