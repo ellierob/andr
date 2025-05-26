@@ -1,10 +1,13 @@
 #!/bin/bash
 
 if [ -f .env.BAK.env ]; then
-    if [ -f .env.adb.and.env ]; then
+    
+    if [ ! -f .env.adb.bs.env ]; then
         # echo "File exists: .env.adb.and.env"
         mv .env .env.adb.bs.env
-    else
+    fi
+
+    if [ ! -f .env.adb.and.env ]; then
         # echo "File not found: .env.adb.and.env"
         mv .env .env.adb.and.env
     fi
