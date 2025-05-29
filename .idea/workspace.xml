@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f4afde8-0aef-48a7-ab82-33bc2eae8910" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/android-studio.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/android-studio.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.adb.bs.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradl3/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradl3/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradl3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gradl3/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android-Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../andrWin/market" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,9 +40,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="547" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1699919665579">
+    <state x="302" y="313" key="FileChooserDialogImpl" timestamp="1748531688901">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="547" y="262" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1699919665579" />
+    <state x="302" y="313" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1748531688901" />
+    <state x="225" y="386" key="com.intellij.ide.util.TipDialog" timestamp="1748531672759">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="225" y="386" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1748531672759" />
   </component>
 </project>
